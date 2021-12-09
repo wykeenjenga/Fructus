@@ -11,14 +11,24 @@
 		CE146E7E27525B1300E21DFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE146E7D27525B1300E21DFA /* ContentView.swift */; };
 		CE146E8027525B1B00E21DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE146E7F27525B1B00E21DFA /* Assets.xcassets */; };
 		CE146E8327525B1B00E21DFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE146E8227525B1B00E21DFA /* Preview Assets.xcassets */; };
+		CE146E8E2752629400E21DFA /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE146E8D2752629400E21DFA /* FruitCardView.swift */; };
+		CE8E226A27624BA4003F38C8 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E226927624BA4003F38C8 /* StartButtonView.swift */; };
+		CE8E226C276254C6003F38C8 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E226B276254C6003F38C8 /* OnBoardingView.swift */; };
+		CE8E227127628C76003F38C8 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E227027628C76003F38C8 /* FruitData.swift */; };
+		CE8E227327628D2A003F38C8 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E227227628D2A003F38C8 /* FruitModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE146E7827525B1300E21DFA /* Fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE146E7827525B1300E21DFA /* WyyK Fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WyyK Fructus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE146E7B27525B1300E21DFA /* FructusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructusApp.swift; sourceTree = "<group>"; };
 		CE146E7D27525B1300E21DFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE146E7F27525B1B00E21DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE146E8227525B1B00E21DFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE146E8D2752629400E21DFA /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		CE8E226927624BA4003F38C8 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		CE8E226B276254C6003F38C8 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		CE8E227027628C76003F38C8 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
+		CE8E227227628D2A003F38C8 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +53,7 @@
 		CE146E7927525B1300E21DFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE146E7827525B1300E21DFA /* Fructus.app */,
+				CE146E7827525B1300E21DFA /* WyyK Fructus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +61,11 @@
 		CE146E7A27525B1300E21DFA /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				CE146E7B27525B1300E21DFA /* FructusApp.swift */,
-				CE146E7D27525B1300E21DFA /* ContentView.swift */,
+				CE8E226F27628C61003F38C8 /* Data */,
+				CE146E8C27525F2200E21DFA /* App */,
+				CE146E8927525C0C00E21DFA /* Views */,
+				CE146E8B27525C1D00E21DFA /* Model */,
+				CE146E8A27525C1400E21DFA /* Screens */,
 				CE146E7F27525B1B00E21DFA /* Assets.xcassets */,
 				CE146E8127525B1B00E21DFA /* Preview Content */,
 			);
@@ -67,12 +80,54 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CE146E8927525C0C00E21DFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE146E8D2752629400E21DFA /* FruitCardView.swift */,
+				CE8E226927624BA4003F38C8 /* StartButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE146E8A27525C1400E21DFA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CE146E8B27525C1D00E21DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E227227628D2A003F38C8 /* FruitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE146E8C27525F2200E21DFA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE146E7B27525B1300E21DFA /* FructusApp.swift */,
+				CE146E7D27525B1300E21DFA /* ContentView.swift */,
+				CE8E226B276254C6003F38C8 /* OnBoardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE8E226F27628C61003F38C8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E227027628C76003F38C8 /* FruitData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE146E7727525B1300E21DFA /* Fructus */ = {
+		CE146E7727525B1300E21DFA /* WyyK Fructus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE146E8627525B1B00E21DFA /* Build configuration list for PBXNativeTarget "Fructus" */;
+			buildConfigurationList = CE146E8627525B1B00E21DFA /* Build configuration list for PBXNativeTarget "WyyK Fructus" */;
 			buildPhases = (
 				CE146E7427525B1300E21DFA /* Sources */,
 				CE146E7527525B1300E21DFA /* Frameworks */,
@@ -82,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = Fructus;
+			name = "WyyK Fructus";
 			productName = Fructus;
-			productReference = CE146E7827525B1300E21DFA /* Fructus.app */;
+			productReference = CE146E7827525B1300E21DFA /* WyyK Fructus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE146E7327525B1300E21DFA /* Build configuration list for PBXProject "Fructus" */;
+			buildConfigurationList = CE146E7327525B1300E21DFA /* Build configuration list for PBXProject "WyyK Fructus" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE146E7727525B1300E21DFA /* Fructus */,
+				CE146E7727525B1300E21DFA /* WyyK Fructus */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8E227127628C76003F38C8 /* FruitData.swift in Sources */,
+				CE8E227327628D2A003F38C8 /* FruitModel.swift in Sources */,
+				CE146E8E2752629400E21DFA /* FruitCardView.swift in Sources */,
+				CE8E226A27624BA4003F38C8 /* StartButtonView.swift in Sources */,
 				CE146E7E27525B1300E21DFA /* ContentView.swift in Sources */,
+				CE8E226C276254C6003F38C8 /* OnBoardingView.swift in Sources */,
 				CE146E7C27525B1300E21DFA /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE146E7327525B1300E21DFA /* Build configuration list for PBXProject "Fructus" */ = {
+		CE146E7327525B1300E21DFA /* Build configuration list for PBXProject "WyyK Fructus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE146E8427525B1B00E21DFA /* Debug */,
@@ -333,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE146E8627525B1B00E21DFA /* Build configuration list for PBXNativeTarget "Fructus" */ = {
+		CE146E8627525B1B00E21DFA /* Build configuration list for PBXNativeTarget "WyyK Fructus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE146E8727525B1B00E21DFA /* Debug */,
