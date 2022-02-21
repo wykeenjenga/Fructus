@@ -9,6 +9,9 @@ import SwiftUI
 
 struct StartButtonView: View {
     
+    @AppStorage("onboarding") var showList: Bool = false
+    
+    
     //properties
     
     //body
@@ -16,7 +19,10 @@ struct StartButtonView: View {
     var body: some View {
         Button(action:{
             print("Exit the onboarding")
-        }){
+            
+            showList = true
+            
+            }){
             HStack(spacing: 8) {
                 Text("Start ")
                 Image(systemName: "arrow.right.circle")
