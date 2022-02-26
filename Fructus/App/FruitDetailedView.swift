@@ -20,6 +20,7 @@ struct FruitDetailedView: View {
                     FruitHeaderView(fruit: fruit)
                     
                     VStack(alignment: .center, spacing: 20) {
+                        
                         //title
                         Text(fruit.title)
                             .font(.largeTitle)
@@ -32,6 +33,7 @@ struct FruitDetailedView: View {
                             .multilineTextAlignment(.leading)
                         
                         //nutrients
+                        FruitNutrientView(fruit: fruit)
                         
                         //subheading
                         Text("Learn more about \(fruit.title)".uppercased())
@@ -56,6 +58,7 @@ struct FruitDetailedView: View {
             }
             .edgesIgnoringSafeArea(.top)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

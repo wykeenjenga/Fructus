@@ -9,8 +9,6 @@ import SwiftUI
 
 struct OnBoardingView: View {
     
-    @State private var showList = false
-    
     //:properties
     var fruit: [Fruit] = fruitData
     
